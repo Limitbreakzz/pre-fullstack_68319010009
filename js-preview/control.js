@@ -6,7 +6,7 @@ function checkScore(score){
     } else {
         return "Fail";
     }
-} 
+}
 
 console.log(`75 คะแนน ${checkScore(75)}`);
 console.log(`49 คะแนน ${checkScore(49)}`);
