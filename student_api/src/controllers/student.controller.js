@@ -21,7 +21,7 @@ exports.getAllStudents = async (req, res) => {
         });
     }
 }
-
+// ดึงข้อมูลตามไอดี
 exports.getStudentsById = async (req, res) => {
     try {
         const id = Number(req.params.id)
@@ -40,7 +40,7 @@ exports.getStudentsById = async (req, res) => {
         });
     }
 }
-
+// เพิ่มข้อมูลใหม่
 exports.createStudent = async (req, res) => {
     try {
         const { name, age, major } = req.body;
@@ -63,7 +63,7 @@ exports.createStudent = async (req, res) => {
         });
     }
 }
-
+// แก้ไขข้อมูล
 exports.updateStudent =  async (req, res) => {
     try {
         const id = Number(req.params.id)
@@ -89,7 +89,7 @@ exports.updateStudent =  async (req, res) => {
         });
     }
 }
-
+// ลบข้อมูล
 exports.deleteStudent = async (req, res) => {
     try {
         const id = Number(req.params.id)
